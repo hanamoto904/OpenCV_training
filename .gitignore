@@ -1,0 +1,11 @@
+.vs/
+*.ilk
+*.pdb
+.tlog
+.lastbuildstate
+.obj
+.log
+.pch
+.idb
+
+
