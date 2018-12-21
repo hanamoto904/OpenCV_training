@@ -1,5 +1,6 @@
 .vs/
 Training_001/Training_001/x64/
+Training_001/Akaze/x64/
 *.ilk
 *.pdb
 .tlog
@@ -8,5 +9,7 @@ Training_001/Training_001/x64/
 .log
 .pch
 .idb
+.jpg
+.png
 
 
