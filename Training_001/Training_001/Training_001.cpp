@@ -20,9 +20,10 @@ int main()
 	if (!img_1.data || !img_2.data) {
 		std::cout << "画像がよみこめません" << std::endl; return -1;
 	}
-	int minHessian = 400;
-	Ptr < xfeatures2d::SURF>detectorSURF = xfeatures2d::SURF::create(minHessian);
-	Ptr < xfeatures2d::SIFT>detectorSIFT = xfeatures2d::SIFT::create(minHessian);
+	
+	Ptr < xfeatures2d::SURF >detectorSURF = xfeatures2d::SURF::create( 100, 4, 3, false, false );
+	Ptr < xfeatures2d::SIFT >detectorSIFT = xfeatures2d::SIFT::create( 0, 3, 0.05, 10.0, 1.6 );
+
 	vector <KeyPoint>keypoints_1, keypoints_2;
 	detectorSURF->detect(img_1, keypoints_1);
 	detectorSIFT->detect(img_2, keypoints_2);

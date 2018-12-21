@@ -1,6 +1,7 @@
 .vs/
 Training_001/Training_001/x64/
 Training_001/Akaze/x64/
+Sample/
 *.ilk
 *.pdb
 .tlog
